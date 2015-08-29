@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="wadproject.com.todolist.AddDueDate"
+    android:layout_toEndOf="@id/dueDateTV"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <wadproject.com.todolist.myNumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/days"
+        min="1" max="31"></wadproject.com.todolist.myNumberPicker>
+    <wadproject.com.todolist.myNumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/month"
+        min="1" max="12"></wadproject.com.todolist.myNumberPicker>
+
+    <wadproject.com.todolist.myNumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/year"
+        min="2015"
+        max="2100"></wadproject.com.todolist.myNumberPicker>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showDueDateDialog"
+        android:layout_marginTop="65dp"/>
+
+
+</LinearLayout>

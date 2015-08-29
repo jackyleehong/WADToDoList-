@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" tools:context="wadproject.com.todolist.AddAlarm"
+    android:layout_toEndOf="@id/AlarmTV"
+    android:visibility="gone">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <wadproject.com.todolist.myNumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmdays"
+        min="1" max="31"></wadproject.com.todolist.myNumberPicker>
+    <wadproject.com.todolist.myNumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmmonth"
+        min="1" max="12"></wadproject.com.todolist.myNumberPicker>
+
+    <wadproject.com.todolist.myNumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmyear"
+        min="2015"
+        max="2100"></wadproject.com.todolist.myNumberPicker>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <!-- TODO: Update blank fragment layout -->
+    <wadproject.com.todolist.myNumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hours"
+        min="00" max="24"></wadproject.com.todolist.myNumberPicker>
+    <wadproject.com.todolist.myNumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mins"
+        min="00" max="59"></wadproject.com.todolist.myNumberPicker>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showAlarmDialog"
+        android:layout_marginTop="65dp"/>
+</LinearLayout>
